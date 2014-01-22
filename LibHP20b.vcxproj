@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Compress|Win32">
+      <Configuration>Compress</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Flash|Win32">
+      <Configuration>Flash</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Architecture.h" />
+    <ClInclude Include="AT91SAM7L128.h" />
+    <ClInclude Include="Core.h" />
+    <ClInclude Include="Decimal.h" />
+    <ClInclude Include="Number.h" />
+    <ClInclude Include="HP20b.h" />
+    <ClInclude Include="HP20b_Keyboard.h" />
+    <ClInclude Include="HP20b_LCD.h" />
+    <ClInclude Include="Standard.h" />
+    <ClInclude Include="StandardDef.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Core.c" />
+    <ClCompile Include="Decimal.c" />
+    <ClCompile Include="Number.c" />
+    <ClCompile Include="HP20b.c" />
+    <ClCompile Include="HP20b_Keyboard.c" />
+    <ClCompile Include="HP20b_LCD.c" />
+    <ClCompile Include="main.c" />
+    <ClCompile Include="Standard.c" />
+    <ClCompile Include="StandardDef.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="board\hp-20b-calculator.cfg" />
+    <None Include="crt0.sx" />
+    <None Include="flash.lds" />
+    <None Include="Makefile" />
+    <None Include="NMakefile" />
+    <None Include="openocd.cfg" />
+    <None Include="target\at91sam7l128.cfg" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2572CB4C-2037-4A0E-AED9-F2062AD7540B}</ProjectGuid>
+    <Keyword>MakeFileProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Flash|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Compress|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Flash|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Compress|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <NMakeBuildCommandLine>nmake all /f NMakefile /NOLOGO</NMakeBuildCommandLine>
+    <NMakeOutput>libhp20b.bin</NMakeOutput>
+    <NMakeCleanCommandLine>nmake clean /f NMakefile /NOLOGO</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>nmake all /f NMakefile  /NOLOGO</NMakeReBuildCommandLine>
+    <NMakePreprocessorDefinitions>_DEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Flash|Win32'">
+    <NMakeBuildCommandLine>nmake flash /f NMakefile  /NOLOGO</NMakeBuildCommandLine>
+    <NMakeOutput>libhp20b.bin</NMakeOutput>
+    <NMakeCleanCommandLine>nmake clean /f NMakefile /NOLOGO</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>nmake flash /f NMakefile  /NOLOGO</NMakeReBuildCommandLine>
+    <NMakePreprocessorDefinitions>$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Compress|Win32'">
+    <NMakeBuildCommandLine>nmake compress /f NMakefile  /NOLOGO</NMakeBuildCommandLine>
+    <NMakeOutput>libhp20b.bin</NMakeOutput>
+    <NMakeCleanCommandLine>nmake clean /f NMakefile /NOLOGO</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>nmake compress /f NMakefile  /NOLOGO</NMakeReBuildCommandLine>
+    <NMakePreprocessorDefinitions>$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

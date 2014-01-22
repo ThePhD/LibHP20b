@@ -1,0 +1,107 @@
+#define __ASSEMBLY__
+
+#include "AT91SAM7L128.h"
+
+#define ARM_MODE_ABT		 0x17
+#define ARM_MODE_FIQ		 0x11
+#define ARM_MODE_IRQ		 0x12
+#define ARM_MODE_SVC		 0x13
+#define ARM_MODE_SYS		 0x1F
+
+#define I_BIT						0x80
+#define F_BIT						0x40
+	
+	.align 4
+	.arm
+
+/* Exception vectors
+
+This should be placed at the very beginning of Flash so it can
+be mapped to address 0 at reset. */
+	
+	.section .vectors
+	
+resetVector:		/* Reset */
+				ldr		 pc, =resetHandler
+undefVector:		/* Undefined Instruction */
+				ldr		 pc, =resetHandler
+swiVector:		/* Software Interrupt */
+				ldr		 pc, =resetHandler
+prefetchAbortVector: 	/* Prefetch Abort */
+				ldr		 pc, =resetHandler
+dataAbortVector:	/* Data abort */
+				ldr		 pc, =resetHandler
+reservedVector:					/* Reserved for future use */
+				b			 reservedVector
+irqVector:		/* Interrupt */
+				b			 irqHandler
+fiqVector:							/* Fast interrupt */
+				ldr		 pc, =resetHandler
+
+
+/*------------------------------------------------------------------------------
+ Handles incoming interrupt requests by branching to the corresponding
+ handler, as defined in the AIC. Supports interrupt nesting.
+------------------------------------------------------------------------------ */
+irqHandler:
+
+/* Save interrupt context on the stack to allow nesting */
+				sub		 lr, lr, #4
+				stmfd	 sp!, {lr}
+				mrs		 lr, SPSR
+				stmfd	 sp!, {r0, lr}
+
+/* Write in the IVR to support Protect Mode */
+				ldr		 lr, =AT91C_BASE_AIC
+				ldr		 r0, [r14, #AIC_IVR]
+				str		 lr, [r14, #AIC_IVR]
+
+/* Branch to interrupt handler in Supervisor mode */
+				msr		 CPSR_c, #ARM_MODE_SVC
+				stmfd	 sp!, {r1-r3, r4, r12, lr}
+				mov		 lr, pc
+	mov	pc, r0
+				ldmia	 sp!, {r1-r3, r4, r12, lr}
+				msr		 CPSR_c, #ARM_MODE_IRQ | I_BIT
+
+/* Acknowledge interrupt */
+				ldr		 lr, =AT91C_BASE_AIC
+				str		 lr, [r14, #AIC_EOICR]
+
+/* Restore interrupt context and branch back to calling code */
+				ldmia	 sp!, {r0, lr}
+				msr		 SPSR_cxsf, lr
+				ldmia	 sp!, {pc}^
+
+	.global main 	/* int main(void) */
+	.global _stack	/* top of stack */
+
+	.section .text
+	.global resetHandler
+
+	.align	4
+	.arm
+
+resetHandler:
+	/* Dummy access so that ld's --gc-sections flag does not */
+	/* optimize away the above vectors */
+	ldr	r0, =resetVector
+
+	/* Set up the interrupt stack pointer */
+	msr	cpsr_c, #ARM_MODE_IRQ | I_BIT | F_BIT
+	ldr	r4, =_irqstack
+	mov	sp, r4
+
+	/* Go to supervisor mode; enable interrupts */
+	msr	cpsr_c, #ARM_MODE_SVC | F_BIT
+	
+	/* Initialize the C stack pointer */
+	ldr	r4, =_stack
+	mov	sp, r4
+
+	/* Call main */
+	bl	main
+
+	/* Halt */
+forever:	
+	b forever

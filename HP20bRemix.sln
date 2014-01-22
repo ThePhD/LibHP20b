@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LibHP20b", "LibHP20b.vcxproj", "{2572CB4C-2037-4A0E-AED9-F2062AD7540B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LibHP20bTest", "LibHP20bTest.vcxproj", "{00B78FE1-B867-483D-90CF-A1917440FF5B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Compress|ARM7 = Compress|ARM7
+		Compress|Win32 = Compress|Win32
+		Debug|ARM7 = Debug|ARM7
+		Debug|Win32 = Debug|Win32
+		Flash|ARM7 = Flash|ARM7
+		Flash|Win32 = Flash|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2572CB4C-2037-4A0E-AED9-F2062AD7540B}.Compress|ARM7.ActiveCfg = Compress|Win32
+		{2572CB4C-2037-4A0E-AED9-F2062AD7540B}.Compress|ARM7.Build.0 = Compress|Win32
+		{2572CB4C-2037-4A0E-AED9-F2062AD7540B}.Compress|Win32.ActiveCfg = Compress|Win32
+		{2572CB4C-2037-4A0E-AED9-F2062AD7540B}.Compress|Win32.Build.0 = Compress|Win32
+		{2572CB4C-2037-4A0E-AED9-F2062AD7540B}.Debug|ARM7.ActiveCfg = Debug|Win32
+		{2572CB4C-2037-4A0E-AED9-F2062AD7540B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2572CB4C-2037-4A0E-AED9-F2062AD7540B}.Flash|ARM7.ActiveCfg = Flash|Win32
+		{2572CB4C-2037-4A0E-AED9-F2062AD7540B}.Flash|ARM7.Build.0 = Flash|Win32
+		{2572CB4C-2037-4A0E-AED9-F2062AD7540B}.Flash|Win32.ActiveCfg = Flash|Win32
+		{2572CB4C-2037-4A0E-AED9-F2062AD7540B}.Flash|Win32.Build.0 = Flash|Win32
+		{00B78FE1-B867-483D-90CF-A1917440FF5B}.Compress|ARM7.ActiveCfg = Compress|Win32
+		{00B78FE1-B867-483D-90CF-A1917440FF5B}.Compress|Win32.ActiveCfg = Compress|Win32
+		{00B78FE1-B867-483D-90CF-A1917440FF5B}.Debug|ARM7.ActiveCfg = Debug|Win32
+		{00B78FE1-B867-483D-90CF-A1917440FF5B}.Debug|ARM7.Build.0 = Debug|Win32
+		{00B78FE1-B867-483D-90CF-A1917440FF5B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{00B78FE1-B867-483D-90CF-A1917440FF5B}.Debug|Win32.Build.0 = Debug|Win32
+		{00B78FE1-B867-483D-90CF-A1917440FF5B}.Flash|ARM7.ActiveCfg = Flash|Win32
+		{00B78FE1-B867-483D-90CF-A1917440FF5B}.Flash|Win32.ActiveCfg = Flash|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

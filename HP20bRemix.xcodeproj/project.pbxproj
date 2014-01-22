@@ -1,0 +1,353 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		9CF50E70150473B700DFF2A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9CF50E3815043D6400DFF2A7 /* LibHP20bTest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9CF50E611504417600DFF2A7;
+			remoteInfo = LibHP20bTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9C7F2BB914EDA4A500B31DF4 /* AT91SAM7L128.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AT91SAM7L128.h; sourceTree = "<group>"; };
+		9C7F2BBA14EDA4A500B31DF4 /* Core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Core.h; sourceTree = "<group>"; };
+		9C7F2BBC14EDA4A500B31DF4 /* HP20b_Keyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HP20b_Keyboard.h; sourceTree = "<group>"; };
+		9C7F2BBD14EDA4A500B31DF4 /* HP20b_LCD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HP20b_LCD.h; sourceTree = "<group>"; };
+		9C7F2BBE14EDA4A500B31DF4 /* HP20b.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HP20b.h; sourceTree = "<group>"; };
+		9C7F2BBF14EDA4A500B31DF4 /* Standard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Standard.h; sourceTree = "<group>"; };
+		9C7F2BC114EDA4A500B31DF4 /* Core.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Core.c; sourceTree = "<group>"; };
+		9C7F2BC314EDA4A500B31DF4 /* HP20b_Keyboard.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = HP20b_Keyboard.c; sourceTree = "<group>"; };
+		9C7F2BC414EDA4A500B31DF4 /* HP20b_LCD.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = HP20b_LCD.c; sourceTree = "<group>"; };
+		9C7F2BC514EDA4A500B31DF4 /* HP20b.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = HP20b.c; sourceTree = "<group>"; };
+		9C7F2BC614EDA4A500B31DF4 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		9C7F2BC714EDA4A500B31DF4 /* Standard.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Standard.c; sourceTree = "<group>"; };
+		9C7F2BC914EDA4A500B31DF4 /* crt0.sx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = crt0.sx; sourceTree = "<group>"; };
+		9C7F2BCA14EDA4A500B31DF4 /* flash.lds */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = flash.lds; sourceTree = "<group>"; };
+		9C7F2BCB14EDA4A500B31DF4 /* openocd.cfg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = openocd.cfg; sourceTree = "<group>"; };
+		9C7F2BCE14EDA4BB00B31DF4 /* hp-20b-calculator.cfg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "hp-20b-calculator.cfg"; sourceTree = "<group>"; };
+		9C7F2BD014EDA4BB00B31DF4 /* at91sam7l128.cfg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = at91sam7l128.cfg; sourceTree = "<group>"; };
+		9CBB2C9A14F6E85E00FB18D0 /* Architecture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Architecture.h; sourceTree = "<group>"; };
+		9CBB2C9B14F6E85E00FB18D0 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		9CBB2C9C14F6E85E00FB18D0 /* NMakefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NMakefile; sourceTree = "<group>"; };
+		9CBE39F614F97A04007D2568 /* Decimal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Decimal.h; sourceTree = "<group>"; };
+		9CBE39F714F97A04007D2568 /* StandardDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StandardDef.h; sourceTree = "<group>"; };
+		9CBE39F814F97A04007D2568 /* Decimal.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Decimal.c; sourceTree = "<group>"; };
+		9CBE39F914F97A04007D2568 /* StandardDef.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = StandardDef.c; sourceTree = "<group>"; };
+		9CF0276414FF245100B2E7C1 /* Number.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Number.h; sourceTree = "<group>"; };
+		9CF0276614FF246E00B2E7C1 /* Number.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Number.c; sourceTree = "<group>"; };
+		9CF50E3815043D6400DFF2A7 /* LibHP20bTest.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = LibHP20bTest.xcodeproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		9C7F2BA914EDA43D00B31DF4 = {
+			isa = PBXGroup;
+			children = (
+				9CF50E3815043D6400DFF2A7 /* LibHP20bTest.xcodeproj */,
+				9CBB2C9B14F6E85E00FB18D0 /* Makefile */,
+				9CBB2C9C14F6E85E00FB18D0 /* NMakefile */,
+				9C7F2BC114EDA4A500B31DF4 /* Core.c */,
+				9CBE39F814F97A04007D2568 /* Decimal.c */,
+				9C7F2BC514EDA4A500B31DF4 /* HP20b.c */,
+				9C7F2BC314EDA4A500B31DF4 /* HP20b_Keyboard.c */,
+				9C7F2BC414EDA4A500B31DF4 /* HP20b_LCD.c */,
+				9C7F2BC614EDA4A500B31DF4 /* main.c */,
+				9CF0276614FF246E00B2E7C1 /* Number.c */,
+				9C7F2BC714EDA4A500B31DF4 /* Standard.c */,
+				9CBE39F914F97A04007D2568 /* StandardDef.c */,
+				9C7F2BCB14EDA4A500B31DF4 /* openocd.cfg */,
+				9CBB2C9A14F6E85E00FB18D0 /* Architecture.h */,
+				9C7F2BB914EDA4A500B31DF4 /* AT91SAM7L128.h */,
+				9C7F2BBA14EDA4A500B31DF4 /* Core.h */,
+				9CBE39F614F97A04007D2568 /* Decimal.h */,
+				9C7F2BBE14EDA4A500B31DF4 /* HP20b.h */,
+				9C7F2BBC14EDA4A500B31DF4 /* HP20b_Keyboard.h */,
+				9C7F2BBD14EDA4A500B31DF4 /* HP20b_LCD.h */,
+				9CF0276414FF245100B2E7C1 /* Number.h */,
+				9C7F2BBF14EDA4A500B31DF4 /* Standard.h */,
+				9CBE39F714F97A04007D2568 /* StandardDef.h */,
+				9C7F2BCA14EDA4A500B31DF4 /* flash.lds */,
+				9C7F2BC914EDA4A500B31DF4 /* crt0.sx */,
+				9C7F2BCD14EDA4BB00B31DF4 /* board */,
+				9C7F2BCF14EDA4BB00B31DF4 /* target */,
+			);
+			sourceTree = "<group>";
+		};
+		9C7F2BCD14EDA4BB00B31DF4 /* board */ = {
+			isa = PBXGroup;
+			children = (
+				9C7F2BCE14EDA4BB00B31DF4 /* hp-20b-calculator.cfg */,
+			);
+			path = board;
+			sourceTree = "<group>";
+		};
+		9C7F2BCF14EDA4BB00B31DF4 /* target */ = {
+			isa = PBXGroup;
+			children = (
+				9C7F2BD014EDA4BB00B31DF4 /* at91sam7l128.cfg */,
+			);
+			path = target;
+			sourceTree = "<group>";
+		};
+		9CF50E6D150473B600DFF2A7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9CF50E71150473B700DFF2A7 /* LibHP20bTest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		9C7F2BB014EDA43D00B31DF4 /* All */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "clean all";
+			buildConfigurationList = 9C7F2BB314EDA43D00B31DF4 /* Build configuration list for PBXLegacyTarget "All" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = "";
+			dependencies = (
+			);
+			name = All;
+			passBuildSettingsInEnvironment = 1;
+			productName = HP20bRemix;
+		};
+		9CBB2C9D14F6ED2900FB18D0 /* Flash */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "clean flash";
+			buildConfigurationList = 9CBB2C9E14F6ED2900FB18D0 /* Build configuration list for PBXLegacyTarget "Flash" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = "";
+			dependencies = (
+			);
+			name = Flash;
+			passBuildSettingsInEnvironment = 1;
+			productName = HP20bRemixFlash;
+		};
+		9CBB2CA114F6EF0200FB18D0 /* Compress */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "clean compress";
+			buildConfigurationList = 9CBB2CA214F6EF0200FB18D0 /* Build configuration list for PBXLegacyTarget "Compress" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = "";
+			dependencies = (
+			);
+			name = Compress;
+			passBuildSettingsInEnvironment = 1;
+			productName = HP20bRemixCompress;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXProject section */
+		9C7F2BAB14EDA43D00B31DF4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 9C7F2BAE14EDA43D00B31DF4 /* Build configuration list for PBXProject "HP20bRemix" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9C7F2BA914EDA43D00B31DF4;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 9CF50E6D150473B600DFF2A7 /* Products */;
+					ProjectRef = 9CF50E3815043D6400DFF2A7 /* LibHP20bTest.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				9C7F2BB014EDA43D00B31DF4 /* All */,
+				9CBB2C9D14F6ED2900FB18D0 /* Flash */,
+				9CBB2CA114F6EF0200FB18D0 /* Compress */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		9CF50E71150473B700DFF2A7 /* LibHP20bTest */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = LibHP20bTest;
+			remoteRef = 9CF50E70150473B700DFF2A7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin XCBuildConfiguration section */
+		9C7F2BB114EDA43D00B31DF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		9C7F2BB214EDA43D00B31DF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		9C7F2BB414EDA43D00B31DF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				DEBUGGING_SYMBOLS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PATH = "usr/local/bin/:opt/local/bin/:${PATH}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9C7F2BB514EDA43D00B31DF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PATH = "usr/local/bin/:opt/local/bin/:${PATH}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9CBB2C9F14F6ED2900FB18D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				DEBUGGING_SYMBOLS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9CBB2CA014F6ED2900FB18D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9CBB2CA314F6EF0200FB18D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				DEBUGGING_SYMBOLS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9CBB2CA414F6EF0200FB18D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9C7F2BAE14EDA43D00B31DF4 /* Build configuration list for PBXProject "HP20bRemix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C7F2BB114EDA43D00B31DF4 /* Debug */,
+				9C7F2BB214EDA43D00B31DF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C7F2BB314EDA43D00B31DF4 /* Build configuration list for PBXLegacyTarget "All" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C7F2BB414EDA43D00B31DF4 /* Debug */,
+				9C7F2BB514EDA43D00B31DF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CBB2C9E14F6ED2900FB18D0 /* Build configuration list for PBXLegacyTarget "Flash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CBB2C9F14F6ED2900FB18D0 /* Debug */,
+				9CBB2CA014F6ED2900FB18D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CBB2CA214F6EF0200FB18D0 /* Build configuration list for PBXLegacyTarget "Compress" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CBB2CA314F6EF0200FB18D0 /* Debug */,
+				9CBB2CA414F6EF0200FB18D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9C7F2BAB14EDA43D00B31DF4 /* Project object */;
+}

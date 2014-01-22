@@ -1,0 +1,8 @@
+#ifndef LIBHP20BARCHITECTURE_H
+#define LIBHP20BARCHITECTURE_H
+
+#ifndef PROJTEST
+#define ARM 1
+#endif
+
+#endif /* LIBHP20BARCHITECTURE_H */

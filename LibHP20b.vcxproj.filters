@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="HP20b_LCD.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Standard.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HP20b_Keyboard.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HP20b.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Core.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Number.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Decimal.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StandardDef.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AT91SAM7L128.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HP20b_LCD.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Core.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HP20b.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HP20b_Keyboard.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Standard.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Architecture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StandardDef.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Number.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Decimal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Makefile" />
+    <None Include="openocd.cfg" />
+    <None Include="flash.lds" />
+    <None Include="target\at91sam7l128.cfg" />
+    <None Include="board\hp-20b-calculator.cfg" />
+    <None Include="crt0.sx">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="NMakefile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{7595c5b4-5cd0-43df-95ca-ac1f66accec1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{d7e964ba-9713-432a-a094-48c4e78a0445}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
